@@ -7,7 +7,6 @@ source $HOME/.config/nvim/general/settings.vim
 
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
-
 " Plugin Config
 
 source $HOME/.config/nvim/plug-config/ale.vim
@@ -32,3 +31,10 @@ let g:coc_node_path = '/Users/gregsugiyama/.nvm/versions/node/v16.13.2/bin/node'
 
 " Enable Prettier
 autocmd FileType javascript set formatprg=prettier\ --stdin
+
+" Enables vertical print out for command executables
+command Exec set splitright | vnew | set filetype=sh | read !sh #
+
+
+
+

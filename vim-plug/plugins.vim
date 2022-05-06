@@ -3,7 +3,7 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   "autocmd VimEnter * PlugInstall
-  "autocmd VimEnter * PlugInstall | source $MYVIMRC
+  " autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
 autocmd StdinReadPre * let s:std_in=1
@@ -37,12 +37,7 @@ Plug 'tpope/vim-commentary'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'vim-test/vim-test'
 Plug 'puremourning/vimspector'
+Plug 'TovarishFin/vim-solidity'
 
 call plug#end()
-
-" set background=dark
-
-" let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-
-
 
