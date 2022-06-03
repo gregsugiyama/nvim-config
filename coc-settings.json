@@ -6,7 +6,8 @@
 
     "preferences": {
       "rootPatterns": ["build.sbt", "build.sc", "build.grade", "pom.xml"],
-      "formatOnSaveFiletypes": ["css", "markdown", "javascript"]
+      "formatOnSaveFiletypes": ["typescript", "css", "markdown", "javascript", "clojure"],
+      "formatOnType": true
     },
 
     "languageserver": {
@@ -22,10 +23,10 @@
       "alwaysShowStatus": true
     }
   },
-    "metals": {
-      "showInferredType": true,
-      "statusBarEnabled": true,
-      "superMethodLensesEnabled": true,
-      "showImplicitArguments": true
+  "metals": {
+    "showInferredType": true,
+    "statusBarEnabled": true,
+    "superMethodLensesEnabled": true,
+    "showImplicitArguments": true
   }
 }
