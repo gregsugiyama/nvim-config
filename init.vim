@@ -14,9 +14,9 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/nerd_tree.vim
 source $HOME/.config/nvim/plug-config/treesitter.vim
 source $HOME/.config/nvim/plug-config/sonokai.vim
-source $HOME/.config/nvim/plug-config/indent_blankline.vim 
-source $HOME/.config/nvim/plug-config/vim_fugitive.vim 
-source $HOME/.config/nvim/plug-config/vim_test.vim 
+source $HOME/.config/nvim/plug-config/indent_blankline.vim
+source $HOME/.config/nvim/plug-config/vim_fugitive.vim
+source $HOME/.config/nvim/plug-config/vim_test.vim
 source $HOME/.config/nvim/plug-config/float_preview.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/lightline.vim
