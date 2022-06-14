@@ -27,7 +27,7 @@ source $HOME/.config/nvim/coc/coc-mappings.vim
 source $HOME/.config/nvim/coc/coc-prettier.vim
 
 " Set CoC's node path to use the a stable version of Node
-let g:coc_node_path = '/Users/gregsugiyama/.nvm/versions/node/v16.13.2/bin/node'
+let g:coc_node_path = '/home/dev/.nvm/versions/node/v16.13.2/bin/node'
 
 " Enable Prettier
 autocmd FileType javascript set formatprg=prettier\ --stdin

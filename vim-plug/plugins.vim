@@ -33,7 +33,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-" Plug 'luochen1990/rainbow'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'vim-test/vim-test'
 Plug 'puremourning/vimspector'
