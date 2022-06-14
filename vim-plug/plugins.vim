@@ -12,7 +12,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
 Plug 'sainnhe/sonokai'
 Plug 'dense-analysis/ale'
-Plug 'liuchengxu/vim-better-default'
 Plug 'easymotion/vim-easymotion'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
