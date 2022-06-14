@@ -1,5 +1,4 @@
 lua <<EOF
-local rainbow = { "#CC8888", "#CCCC88", "#88CC88", "#88CCCC", "#8888CC", "#CC88CC" }
 require("nvim-treesitter.configs").setup {
     ensure_installed = { "javascript", "ruby", "clojure", "typescript", "java", "scala" },
 
@@ -21,16 +20,9 @@ highlight = {
     -- Instead of true it can also be a list of languages
     additional_vim_regex_highlighting = false,
   },
-  
+
   rainbow = {
-    enable = true,
-    extended_mode = true,
-    max_file_lines = nil,
-    colors = rainbow, 
-    termcolors = rainbow,
-  }
+      enable = true,
+  },
 }
-for i, c in ipairs(rainbow) do -- p00f/rainbow#81
-	vim.cmd(("hi rainbowcol%d guifg=%s"):format(i, c))
-end
 EOF

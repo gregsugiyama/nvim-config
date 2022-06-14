@@ -2,6 +2,19 @@
 let g:mapleader = ","
 let maplocalleader = "\<space>"
 
+" Set CoC's node path to use the a stable version of Node
+let g:coc_node_path = '$HOME/.nvm/versions/node/v16.13.2/bin/node'
+
+" Enable Prettier
+autocmd FileType javascript set formatprg=prettier\ --stdin
+
+" Enables vertical print out for command executables
+command Exec set splitright | vnew | set filetype=sh | read !sh #
+
+" Escape terminal mode
+
+:tnoremap <Esc> <C-\><C-n>
+
 " set GUI colours
 " set termguicolors
 
@@ -39,7 +52,6 @@ set t_Co=256                            " Support 256 colors
 set conceallevel=0                      " So that I can see `` in markdown files
 set tabstop=2                           " Insert 2 spaces for a tab
 set softtabstop=0
-set expandtab
 set shiftwidth=2                        " Change the number of space characters inserted for indentation
 set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
 set expandtab                           " Converts tabs to spaces
