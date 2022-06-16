@@ -11,6 +11,9 @@ autocmd StdinReadPre * let s:std_in=1
 call plug#begin('~/.config/nvim/autoload/plugged')
 
 " Plug 'sainnhe/sonokai'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'sainnhe/gruvbox-material'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
@@ -24,8 +27,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'liuchengxu/vim-clap'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'scrooloose/nerdtree'
 Plug 'Olical/conjure'

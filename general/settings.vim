@@ -31,7 +31,7 @@ noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
 
 " Navigate split panes
-map <C-j><C-W>j
+map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
@@ -71,7 +71,7 @@ set mousehide                           " Hide the mouse cursor while typing
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set autochdir                           " Your working directory will always be the same as your working directory
-set background = "dark"                     " Assume dark background
+set background = "dark"                 " Assume dark background
 set cursorline                          " Highlight current line
 set showcmd                             " Show partial commands in status line and Selected characters/lines in visual mode
 set showmode                            " Show current mode in command-line
