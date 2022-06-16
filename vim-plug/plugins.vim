@@ -10,7 +10,8 @@ autocmd StdinReadPre * let s:std_in=1
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-Plug 'sainnhe/sonokai'
+" Plug 'sainnhe/sonokai'
+Plug 'sainnhe/gruvbox-material'
 Plug 'dense-analysis/ale'
 Plug 'easymotion/vim-easymotion'
 Plug 'guns/vim-sexp'
@@ -32,7 +33,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-" Plug 'luochen1990/rainbow'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'vim-test/vim-test'
 Plug 'puremourning/vimspector'
