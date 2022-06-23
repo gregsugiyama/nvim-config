@@ -3,7 +3,7 @@ let g:mapleader = ","
 let maplocalleader = "\<space>"
 
 " Set CoC's node path to use the a stable version of Node
-let g:coc_node_path = '/home/gregsugiyama/.nvm/versions/node/v16.14.2/bin/node'
+let g:coc_node_path = '$HOME/.nvm/versions/node/v16.14.2/bin/node'
 
 " Enable Prettier
 autocmd FileType javascript set formatprg=prettier\ --stdin
@@ -17,6 +17,9 @@ command Exec set splitright | vnew | set filetype=sh | read !sh #
 
 " set GUI colours
 " set termguicolors
+
+" disable shortmess for scala
+set shortmess-=F
 
 " Go to tab by number
 noremap <leader>1 1gt
