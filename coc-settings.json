@@ -11,7 +11,8 @@
     "css",
     "markdown",
     "javascript",
-    "clojure"
+    "clojure",
+    "scala"
   ],
   "coc.preferences.formatOnType": true,
   "languageserver": {
@@ -32,5 +33,11 @@
   "eslint.enable": true,
   "eslint.alwaysShowStatus": true,
   "eslint.autoFixOnSave": true,
-  "tsserver.enable": true
-}
+  "tsserver.enable": true,
+  
+   "metals.statusBarEnabled": true,
+  "metals.superMethodLensesEnabled": true,
+  "metals.showInferredType": true,
+  "metals.showImplicitArguments": true
+  }
+
