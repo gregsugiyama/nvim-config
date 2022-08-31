@@ -1,5 +1,5 @@
-" These default mappings should either go in your .vimrc or in a file that
-" you're going to source from your .vimrc. For example, you can copy this file
+" these default mappings should either go in your .vimrc or in a file that
+" you're going to source from your .vimrc. for example, you can copy this file
 " into your ~ directory and then put the following in your .vimrc to source it
 "
 " coc.nvim lsp mappings
@@ -8,37 +8,48 @@
 "endif
 "
 "
-" If you're curious how to share this or your .vimrc with both vim and nvim,
+" if you're curious how to share this or your .vimrc with both vim and nvim,
 " you can find a great instructions about this here
 " https://neovim.io/doc/user/nvim.html#nvim-from-vim
 "
-" Finally, keep in mind that these are 'suggested' settings. Play around with
+" finally, keep in mind that these are 'suggested' settings. play around with
 " them and change them to your liking.
 
-" If hidden is not set, TextEdit might fail.
+" if hidden is not set, textedit might fail.
 set hidden
 
-" Some servers have issues with backup files
+" some servers have issues with backup files
 set nobackup
 set nowritebackup
 
-" You will have a bad experience with diagnostic messages with the default of 4000.
+" you will have a bad experience with diagnostic messages with the default of 4000.
 set updatetime=300
 
-" Don't give |ins-completion-menu| messages.
+" don't give |ins-completion-menu| messages.
 set shortmess+=c
 
-" Always show signcolumns
+" always show signcolumns
 set signcolumn=yes
 
-" Use tab for trigger completion with characters ahead and navigate.
-" Use command ':verbose imap <tab>' to make sure tab is not mapped by another plugin.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+" use tab for trigger completion with characters ahead and navigate.
+" use command ':verbose imap <tab>' to make sure tab is not mapped by another plugin.
+" inoremap <silent><expr> <tab>
+"       \ pumvisible() ? "\<c-n>" :
+"       \ <sid>check_back_space() ? "\<tab>" :
+"       \ coc#refresh()
+" inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<c-h>"
+inoremap <silent><expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<c-g>u\<cr>\<c-r>=coc#on_enter()\<cr>"
+inoremap <silent><expr> <c-x><c-z> coc#pum#visible() ? coc#pum#stop() : "\<c-x>\<c-z>"
+" remap for complete to use tab and <cr>
+inoremap <silent><expr> <tab>
+    \ coc#pum#visible() ? coc#pum#next(1):
+    \ <sid>check_back_space() ? "\<tab>" :
+    \ coc#refresh()
+inoremap <expr><s-tab> coc#pum#visible() ? coc#pum#prev(1) : "\<c-h>"
+inoremap <silent><expr> <c-space> coc#refresh()
 
+hi cocsearch ctermfg=12 guifg=#18a3ff
+hi cocmenusel ctermbg=109 guibg=#13354a
 " Used in the tab autocompletion for coc
 function! s:check_back_space() abort
   let col = col('.') - 1

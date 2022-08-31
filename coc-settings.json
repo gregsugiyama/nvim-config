@@ -12,7 +12,6 @@
     "markdown",
     "javascript",
     "clojure",
-    "scala",
     "react",
     "tsx"
   ],
@@ -20,19 +19,21 @@
   "languageserver": {
     "graphql": {
       "command": "graphql-lsp",
-      "args": ["server", "-m", "stream"],
-      "filetypes": ["typescript", "typescriptreact", "graphql"]
+      "args": [
+        "server",
+        "-m",
+        "stream"
+      ],
+      "filetypes": [
+        "typescript",
+        "typescriptreact",
+        "graphql"
+      ]
     }
   },
+  "eslint.run": "onSave",
   "eslint.enable": true,
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
   "tsserver.enable": true,
-
-  "metals.statusBarEnabled": true,
-  "metals.superMethodLensesEnabled": true,
-  "metals.showInferredType": true,
-  "metals.showImplicitArguments": true,
-
   "java.home": "/Users/gregsugiyama/.jenv/versions/11.0"
 }
