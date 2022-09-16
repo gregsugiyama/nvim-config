@@ -22,7 +22,7 @@ Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ncm2/float-preview.nvim'
-Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
+" Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
