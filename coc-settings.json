@@ -1,32 +1,39 @@
 {
-  "coc": {
-    "codeLens": {
-      "enable": true
-    },
-
-    "preferences": {
-      "rootPatterns": ["build.sbt", "build.sc", "build.grade", "pom.xml"],
-      "formatOnSaveFiletypes": ["typescript", "css", "markdown", "javascript", "clojure"],
-      "formatOnType": true
-    },
-
-    "languageserver": {
-      "graphql": {
-        "command": "graphql-lsp",
-        "args": ["server", "-m", "stream"],
-        "filetypes": ["typescript", "typescriptreact", "graphql"]
-      }
-    },
-
-    "eslint": {
-      "enable": true,
-      "alwaysShowStatus": true
+  "codeLens.enable": true,
+  "coc.preferences.rootPatterns": [
+    "build.sbt",
+    "build.sc",
+    "build.grade",
+    "pom.xml"
+  ],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "typescript",
+    "css",
+    "markdown",
+    "javascript",
+    "clojure",
+    "react",
+    "tsx"
+  ],
+  "coc.preferences.formatOnType": true,
+  "languageserver": {
+    "graphql": {
+      "command": "graphql-lsp",
+      "args": [
+        "server",
+        "-m",
+        "stream"
+      ],
+      "filetypes": [
+        "typescript",
+        "typescriptreact",
+        "graphql"
+      ]
     }
   },
-  "metals": {
-    "showInferredType": true,
-    "statusBarEnabled": true,
-    "superMethodLensesEnabled": true,
-    "showImplicitArguments": true
-  }
+  "eslint.run": "onSave",
+  "eslint.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "tsserver.enable": true,
+  "java.home": "/Users/gregsugiyama/.jenv/versions/11.0"
 }

@@ -10,9 +10,13 @@ autocmd StdinReadPre * let s:std_in=1
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-Plug 'sainnhe/sonokai'
+" Plug 'sainnhe/sonokai'
+Plug 'nvim-lua/plenary.nvim'
+" Plug 'scalameta/nvim-metals' 
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'sainnhe/gruvbox-material'
 Plug 'dense-analysis/ale'
-Plug 'liuchengxu/vim-better-default'
 Plug 'easymotion/vim-easymotion'
 Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
@@ -24,8 +28,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'liuchengxu/vim-clap'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'scrooloose/nerdtree'
 Plug 'Olical/conjure'
@@ -33,11 +35,10 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'p00f/nvim-ts-rainbow'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-" Plug 'luochen1990/rainbow'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'vim-test/vim-test'
 Plug 'puremourning/vimspector'
 Plug 'TovarishFin/vim-solidity'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
-
