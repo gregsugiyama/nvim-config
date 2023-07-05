@@ -40,5 +40,6 @@ Plug 'vim-test/vim-test'
 Plug 'puremourning/vimspector'
 Plug 'TovarishFin/vim-solidity'
 Plug 'airblade/vim-gitgutter'
+Plug 'nullchilly/fsread.nvim'
 
 call plug#end()

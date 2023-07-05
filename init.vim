@@ -21,6 +21,7 @@ source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/lightline.vim
 source $HOME/.config/nvim/plug-config/telescope.vim
 source $HOME/.config/nvim/plug-config/gitgutter.vim
+source $HOME/.config/nvim/plug-config/fsread.vim
 " source $HOME/.config/nvim/plug-config/nvim_metals.vim
 
 " CoC
