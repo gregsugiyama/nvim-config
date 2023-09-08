@@ -41,5 +41,7 @@ Plug 'puremourning/vimspector'
 Plug 'TovarishFin/vim-solidity'
 Plug 'airblade/vim-gitgutter'
 Plug 'nullchilly/fsread.nvim'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
 
 call plug#end()
