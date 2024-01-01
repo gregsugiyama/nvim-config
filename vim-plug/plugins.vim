@@ -43,5 +43,11 @@ Plug 'airblade/vim-gitgutter'
 Plug 'nullchilly/fsread.nvim'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
-
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'Mofiqul/dracula.nvim'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'kristijanhusak/vim-dadbod-completion'
 call plug#end()
