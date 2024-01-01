@@ -35,5 +35,6 @@
   "eslint.enable": true,
   "eslint.alwaysShowStatus": true,
   "tsserver.enable": true,
+  "java.jdt.ls.java.home": "/Users/gregsugiyama/.jenv/versions/17",
   "java.home": "/Users/gregsugiyama/.jenv/versions/11.0"
 }

@@ -22,7 +22,7 @@ Plug 'guns/vim-sexp'
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ncm2/float-preview.nvim'
-Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
+" Plug 'jiangmiao/auto-pairs', { 'tag': 'v2.0.0' }
 Plug 'w0rp/ale'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/lightline.vim'
@@ -40,5 +40,14 @@ Plug 'vim-test/vim-test'
 Plug 'puremourning/vimspector'
 Plug 'TovarishFin/vim-solidity'
 Plug 'airblade/vim-gitgutter'
-
+Plug 'nullchilly/fsread.nvim'
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'Mofiqul/dracula.nvim'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'tpope/vim-dadbod'
+Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'kristijanhusak/vim-dadbod-completion'
 call plug#end()
