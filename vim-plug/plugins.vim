@@ -32,7 +32,7 @@ Plug 'airblade/vim-rooter'
 Plug 'scrooloose/nerdtree'
 Plug 'Olical/conjure'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'p00f/nvim-ts-rainbow'
+Plug 'HiPhish/rainbow-delimiters.nvim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'lukas-reineke/indent-blankline.nvim'

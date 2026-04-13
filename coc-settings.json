@@ -17,6 +17,12 @@
   ],
   "coc.preferences.formatOnType": true,
   "languageserver": {
+    "clojure-lsp": {
+        "command": "clojure-lsp",
+        "filetypes": ["clojure"],
+        "rootPatterns": ["deps.edn", "project.clj"],
+        "settings": {}
+      },
     "graphql": {
       "command": "graphql-lsp",
       "args": [

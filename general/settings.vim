@@ -3,7 +3,7 @@ let g:mapleader = ","
 let maplocalleader = "\<space>"
 
 " Set CoC's node path to use the a stable version of Node
-let g:coc_node_path = '$HOME/.nvm/versions/node/v16.18.0/bin/node'
+let g:coc_node_path = '$HOME/.nvm/versions/node/v24.13.1/bin/node'
 
 " Enable Prettier
 autocmd FileType javascript set formatprg=prettier\ --stdin
@@ -74,7 +74,7 @@ set mousehide                           " Hide the mouse cursor while typing
 set formatoptions-=cro                  " Stop newline continution of comments
 set clipboard=unnamedplus               " Copy paste between vim and everything else
 set autochdir                           " Your working directory will always be the same as your working directory
-set background = "dark"                 " Assume dark background
+set background=dark                     " Assume dark background
 set cursorline                          " Highlight current line
 set showcmd                             " Show partial commands in status line and Selected characters/lines in visual mode
 set showmode                            " Show current mode in command-line
